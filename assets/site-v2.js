@@ -1,6 +1,6 @@
 (() => {
   const brand = document.querySelector('.brand');
-  if (brand) {
+  if (brand && !brand.querySelector('img')) {
     const fallback = brand.textContent.trim() || 'SELARL Julie Samama';
     const img = document.createElement('img');
     img.className = 'brand-logo';
@@ -13,10 +13,6 @@
     }, { once: true });
     brand.replaceChildren(img);
   }
-
-  document.querySelectorAll('.nav a[href="/blog/"]').forEach((link) => {
-    link.textContent = 'Prévention & conseils';
-  });
 
   const button = document.querySelector('[data-menu-button]');
   const nav = document.querySelector('[data-nav]');
