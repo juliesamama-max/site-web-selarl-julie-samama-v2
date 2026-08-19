@@ -4,7 +4,7 @@
     const fallback = brand.textContent.trim() || 'SELARL Julie Samama';
     const img = document.createElement('img');
     img.className = 'brand-logo';
-    img.src = '/assets/logo.png';
+    img.src = '/assets/logo.png?v=20260819-1542';
     img.alt = 'SELARL Julie Samama — vétérinaire équine';
     img.decoding = 'async';
     img.addEventListener('error', () => {
