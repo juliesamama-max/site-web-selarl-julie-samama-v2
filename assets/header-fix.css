@@ -1,0 +1,14 @@
+:root{--header-terracotta:#B16344}
+.site-header{background:#0F2879;border-bottom:1px solid rgba(255,255,255,.16);backdrop-filter:none}
+.header-inner{min-height:88px}
+.brand{width:118px;min-height:68px;padding:5px 8px;border-radius:12px;background:#fff}
+.brand-logo{display:block;width:102px;height:58px;object-fit:contain;object-position:center}
+.nav a{color:#fff}
+.nav a:hover{background:rgba(255,255,255,.12);color:#fff}
+.nav a[href="/tarifs/"]{display:inline-flex}
+.nav .urgence-link{margin-left:4px;color:#fff;background:var(--header-terracotta);font-weight:850}
+.nav .urgence-link:hover{background:var(--header-terracotta);color:#fff;filter:brightness(.94)}
+.nav .cta{border-color:#fff;background:#fff;color:#0F2879!important;font-weight:850}
+.nav .cta:hover{background:#F7F8FC;border-color:#F7F8FC;color:#0A1D5B!important}
+.menu-button{border-color:rgba(255,255,255,.45);background:transparent;color:#fff}
+@media(max-width:900px){.nav{border-top-color:rgba(255,255,255,.18)}.nav.open a[href="/tarifs/"]{display:flex!important}.nav.open .urgence-link{margin-left:0}.brand{width:98px;min-height:60px}.brand-logo{width:82px;height:50px}}
